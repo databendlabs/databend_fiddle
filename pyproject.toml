@@ -4,10 +4,10 @@ version = "0.1.0"
 description = ""
 authors = ["sundy-li <543950155@qq.com>"]
 readme = "README.md"
-packages = [{include = "fiddle_databend"}]
+packages = [{ include = "fiddle_databend" }]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.8"
 streamlit-ace = "^0.1.1"
 streamlit = "^1.23.1"
 
