@@ -7,3 +7,4 @@ A simple ui to play fiddle with databend in python(without installing databend's
 poetry build
 streamlit run main.py
 ```
+
