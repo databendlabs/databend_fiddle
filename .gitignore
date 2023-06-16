@@ -1,0 +1,7 @@
+dist
+_databend_data
+_databend_meta
+.vscode
+.databend
+
+

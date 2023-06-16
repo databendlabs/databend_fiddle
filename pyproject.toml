@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "fiddle-databend"
+version = "0.1.0"
+description = ""
+authors = ["sundy-li <543950155@qq.com>"]
+readme = "README.md"
+packages = [{include = "fiddle_databend"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit-ace = "^0.1.1"
+streamlit = "^1.23.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
