@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{ include = "fiddle_databend" }]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.10"
 streamlit-ace = "^0.1.1"
 streamlit = "^1.23.1"
 
