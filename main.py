@@ -6,7 +6,7 @@ from streamlit_ace import st_ace, KEYBINDINGS, THEMES
 import streamlit.components.v1 as components
 
 
-st.set_page_config(page_title = "databend", page_icon=None, layout="wide", initial_sidebar_state="auto", menu_items = None)
+st.set_page_config(page_title = "databend", page_icon="https://databend.rs//img/logo/logo-no-text.svg", layout="wide", initial_sidebar_state="auto", menu_items = None)
 
 ctx = SessionContext()
 
@@ -17,6 +17,8 @@ def read_index_html(copy_text: int):
 def main():
 	c1, c2 = st.columns([4, 1])
 
+	with c2:
+		st.write("[![Star in GITHUB](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/datafuselabs/databend_fiddle)")
 	params = st.experimental_get_query_params()
 
 	if "sql" not in st.session_state:
