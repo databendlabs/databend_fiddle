@@ -1,6 +1,10 @@
+from databend import SessionContext
 import streamlit as st
 from streamlit_ace import st_ace, KEYBINDINGS, THEMES
-from databend import SessionContext
+
+
+
+st.set_page_config(page_title = "databend", page_icon=None, layout="wide", initial_sidebar_state="auto", menu_items = None)
 
 ctx = SessionContext()
 
@@ -11,7 +15,7 @@ def main():
 		content = st_ace(
 			placeholder = "Write your SQL here",
 			language = "sql",
-			theme = c2.selectbox("Theme", options=THEMES, index=28),
+			theme = c2.selectbox("Theme", options=THEMES, index=22),
 			keybinding = c2.selectbox("Keybinding", options=KEYBINDINGS, index=3),
 			font_size=c2.slider("Font size", 5, 24, 14),
 			min_lines=25,

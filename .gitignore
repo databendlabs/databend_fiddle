@@ -3,5 +3,5 @@ _databend_data
 _databend_meta
 .vscode
 .databend
-
+__pycache__/
 
